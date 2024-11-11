@@ -1,0 +1,72 @@
+/* Aplicar estilos globales para resetear el margen y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el fondo */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-image: url('estrellas.png'); /* Aquí pones el link o ruta de tu imagen */
+    background-size: cover; /* Para que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en la página */
+    background-attachment: fixed; /* Hace que la imagen sea fija al hacer scroll */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white; /* El texto en blanco para mayor visibilidad */
+}
+
+/* Estilos del menú */
+nav ul {
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Cambio de color al hacer hover */
+}
+
+/* Estilos para el contenido */
+main {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
