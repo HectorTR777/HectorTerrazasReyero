@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+    /* Estilos para pantallas de tabletas o móviles */
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}

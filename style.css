@@ -42,7 +42,7 @@ nav ul li a:hover {
 
 /* Estilos para el contenido */
 main {
-    text-align: center;
+    text-align: left;
     padding: 100px 20px;
 }
 
@@ -54,8 +54,10 @@ p {
     font-size: 1.2rem;
     line-height: 1.5;
 }
+    /* Para diseño resposive*/
+    
 @media only screen and (max-width:800px) {
-    /* For tablets: */
+    /* Para Tablets: */
     .main {
       width: 80%;
       padding: 0;
@@ -65,8 +67,15 @@ p {
     }
   }
   @media only screen and (max-width:500px) {
-    /* For mobile phones: */
+    /* `Para moviles: */
     .menu, .main, .right {
       width: 100%;
     }
   }
+  @media (max-width: 768px) {
+    /* Estilos para pantallas de tabletas o móviles */
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
