@@ -1,28 +1,25 @@
-/* Aplicar estilos globales para resetear el margen y padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
-/* Estilo para el fondo */
 body {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    background-image: url('estrellas.png'); /* Aquí pones el link o ruta de tu imagen */
-    background-size: cover; /* Para que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen en la página */
-    background-attachment: fixed; /* Hace que la imagen sea fija al hacer scroll */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    color: white; /* El texto en blanco para mayor visibilidad */
+    font-family: "Times New Roman";
+    background-image: url("estrellas.png"); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    color: white; 
+    
 }
 
-/* Estilos del menú */
+
 nav ul {
     list-style-type: none;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 10px;
     display: flex;
-    justify-content: space-around;
 }
 
 nav ul li {
@@ -31,16 +28,15 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    text-decoration: none;
     padding: 10px 20px;
     transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Cambio de color al hacer hover */
+    background-color: rgba(255, 255, 255, 0.3); 
 }
 
-/* Estilos para el contenido */
+
 main {
     text-align: left;
     padding: 100px 20px;
@@ -54,28 +50,5 @@ p {
     font-size: 1.2rem;
     line-height: 1.5;
 }
-    /* Para diseño resposive*/
-    
-@media only screen and (max-width:800px) {
-    /* Para Tablets: */
-    .main {
-      width: 80%;
-      padding: 0;
-    }
-    .right {
-      width: 100%;
-    }
-  }
-  @media only screen and (max-width:500px) {
-    /* `Para moviles: */
-    .menu, .main, .right {
-      width: 100%;
-    }
-  }
-  @media (max-width: 768px) {
-    /* Estilos para pantallas de tabletas o móviles */
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-}
+   
+
